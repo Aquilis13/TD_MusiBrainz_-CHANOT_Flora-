@@ -1,0 +1,213 @@
+#home h1 {
+    margin-bottom: 50px;
+}
+
+.link {
+    margin-left: 10px;
+    cursor: pointer; 
+}
+
+#home, .greetings {
+    margin: 20px;
+}
+
+.greetings {
+    h1, h3 {
+        text-align: center;
+    }
+
+    h1 {
+        font-weight: 500;
+        font-size: 2.6rem;
+        position: relative;
+        top: -10px;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+  
+    @media (min-width: 1024px) {
+        h1, h3 {
+            text-align: left;
+        }
+    }
+}
+
+
+div[role=alert] {
+    margin: 20px;
+
+    > span {
+        text-align: center;
+        border-radius: 30px;
+        width: 28px;
+        height: 28px;
+        display: inline-block;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+
+    span[name=danger] {
+        border: 2px solid var(--bs-danger-bg-subtle);
+        color: var(--bs-danger-bg-subtle);
+        background-color: var(--bs-danger-text-emphasis);
+    }
+
+    span[name=info] {
+        border: 2px solid var(--bs-info-bg-subtle);
+        color: var(--bs-info-bg-subtle);
+        background-color: var(--bs-info-text-emphasis);
+    }
+}
+
+#toolbar {
+    background-color: lightseagreen !important;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    box-shadow: 0px 3px 11px gray;
+
+    > div > div {
+        height: 55px !important;
+        
+        > ul {
+            height: 100%;
+
+            > li {
+                height: 100%;
+                min-width: 100px;
+                text-align: center;
+                
+                
+                > a {
+                    color: white !important;
+                    height: 100%;
+                    width: 100%;
+                    display: block;
+                    padding: 15px;
+                }
+            }
+
+            > li:hover {
+                > a {
+                    color: lightseagreen !important;
+                }
+                background-color: white;
+            }
+
+            .selected {
+                border-bottom: 5px solid white;
+            }
+        }
+    }
+
+    * { 
+        text-decoration: none;
+    }
+
+    > div > a {
+        * {
+            color: white !important;
+        }
+        
+        > img {
+            border: 2px solid white;
+            border-radius: 36px;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+#container {
+    margin: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+
+    > header {
+        border-radius: 20px 20px 0 0;
+        padding: 20px;
+        border-bottom: 1px solid gray;
+        background-color: dimgray;
+        color: azure;
+
+        > h3{
+            margin-left: 30px;
+        }
+    }
+
+    > div:nth-child(2) {
+        border-radius: 0 0 20px 20px;
+        padding: 20px;
+
+        > div > div {
+            margin-left: 20px;
+        }
+    }
+
+    #body_ArtistDetail {
+        h4 {
+            text-decoration: underline;
+        }
+
+        > #life {
+            margin-top: 15px;
+            margin-bottom: 40px;
+        }
+    }
+
+    #body_MusicDetail {
+        > div {
+            margin-bottom: 10px;
+            width: 50%;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 20px 20px 20px 0;
+        }
+
+        > h4 {
+            margin-top: 20px;
+        }
+
+        h4, h5 {
+            text-decoration: underline;
+        }
+    }
+
+    > #body_ResultatRecherche {
+        .card-header {
+            background-color: lightblue;
+        }
+
+        .card-body {
+            background-color: #e4e4e4;
+        }
+
+        .card-text {
+            > div:nth-child(8) {
+                margin-top: 15px;
+                margin-bottom: 15px;
+
+                > div {
+                    display: flex; 
+                    flex-wrap: wrap;
+
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+
+                > span {
+                    font-style: italic;
+                }
+            }
+
+            > div:nth-child(9) > a {
+                margin-right: 20px;
+            }
+        }
+    }
+
+}
